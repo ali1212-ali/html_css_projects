@@ -11,9 +11,9 @@
 <body>
     <div class="container">
         <div class="apply_box">
-            <center>
-                <h1>Job Application Form</h1>
-            </center>
+
+            <h1>Job Application Form</h1>
+
             <form action="">
                 <div class="form_container">
                     <div class="form_control">
@@ -22,6 +22,7 @@
                         </label>
                         <input id="first_name" name="first_name" type="text">
                     </div>
+
                     <div class="form_control">
                         <label for="">
                             Last name :
@@ -29,10 +30,65 @@
                         <input id="last_name" name="last_name" type="text">
                     </div>
 
+                    <div class="form_control">
+                        <label for="email">
+                            Email :
+                        </label>
+                        <input id="email" name="email" type="email">
+                    </div>
 
+                    <div class="form_control">
+                        <label for="job_role">
+                            Job Role :
+                        </label>
+                        <select name="job_role" id="job_role">
+                            <option value="null">Select</option>
+                            <option value="frontend">FrontEnd Developer</option>
+                            <option value="backend">BackEnd Developer</option>
+                            <option value="full_stack">Full Stack Developer</option>
+                            <option value="ui_ux">UI UX Designer</option>
+                        </select>
+                    </div>
+                    <div class="textarea_control">
+                        <label for="adress">
+                            Adress :
+                        </label>
+                        <textarea id="adress" name="adress" type="text"></textarea>
+                    </div>
+                    <div class="form_control">
+                        <label for="city">
+                            City name :
+                        </label>
+                        <input id="city_name" name="city_name" type="text">
+                    </div>
+
+                    <div class="form_control">
+                        <label for="city">
+                            Postal Code :
+                        </label>
+                        <input id="postal_code" name="postal_code" type="number">
+                    </div>
+
+                    <div class="form_control">
+                        <label for="date">
+                            Start date :
+                        </label>
+                        <input id="date" name="date" value="2025-01-01" type="date">
+                    </div>
+
+                    <div class="form_control">
+                        <label for="upload">
+                            Upload CV :
+                        </label>
+                        <input name="upload" type="file">
+                    </div>
 
                 </div>
             </form>
+
+            <div class="button_container">
+                <button type="submit">Apply Now</button>
+            </div>
 
         </div>
     </div>
